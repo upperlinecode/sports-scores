@@ -1,8 +1,8 @@
 # Inline and Conditional Styling
 
 ## Learning objectives
-* SWBAT use javascript objects to style components within the component file.
-* SWBAT use conditional rendering to style a component based on properties that are passed to it.
+* SWBAT use javascript objects to style elements in a React project.
+* SWBAT use conditional rendering to style a component based on props that are passed to it.
 
 ## Sequence
 
@@ -33,7 +33,7 @@ Add some inline styling to the div with the className `App` in the `App.js` file
 ![Error Message](error.png)
 
 ## Inline Styling
-It is possible style your HTML using inline styling - just not the way we are used to when using vanilla HTML. In this lecture we are going to explore how to add inline styling to a HTML element - the React way.
+It is possible style your HTML using inline styling - just not the way we are used to. In this lecture we are going to explore how to add inline styling to a HTML element - the React way.
 
 ### Inline Styling is Different in React
 As we saw from our opening, it is not possible to add inline style to an element using a string. Rather, the style attribute of an element will only accept a javascript object. Let's try adding a blue background again, this time by first creating an object and then applying the inline style with using this object.
@@ -52,7 +52,7 @@ function App() {
   );
 }
 ```
-First, we created an object called divStyle (you can name this whatever you want, it does not need to be called divStyle). Then we store the css property and style as an object key value pair.
+First, we created an object called divStyle (you can name this whatever you want, it does not need to be called divStyle). Then we store the CSS property and style as an object key value pair.
 
 Once we have our object, we can style our div by passing this object to the style attribute of the element.
 
