@@ -109,6 +109,8 @@ return (
 );
 ```
 
+You will notice that we used `data[0]` to populate the props of our TableRow. What does `data[0]` represent? How could we add the data from the second Knicks game to the website? How could we add the last game?
+
 Then, we add some styling to `TableRow` with some inline styling as shown below.
 
 ```javascript
@@ -136,7 +138,7 @@ At this point, our web page looks OK. But, we can make it a bit more user friend
 
 ```javascript
 const TableRow = (props) => {
-  let style = {
+  let rowStyle = {
     background: "rgb(240,240,240)"
   }
 
@@ -148,7 +150,7 @@ const TableRow = (props) => {
   }
 
   return(
-    <div className="table-rows" style={ style }>
+    <div className="table-rows" style={ rowStyle }>
       <div>{props.game}</div>
       <div>{props.opponent}</div>
       <div>{props.result}</div>
@@ -167,7 +169,7 @@ As you can see, our first row should have a background color of green now.
 
 #### Mini-challenges
 * Add another row with the data for the Knicks second game. Continue to add rows for the first 5 game.
-* Create a conditional statement that make the font color yellow if the game was an away game (if the location is @ it is an away game).
+* Create a conditional statement that make the font color yellow if the game was an away game. "@" is used represent an away game. (Note: you might need to make a new style object - like scoreStyle for the score)
 * Create a conditional statement that makes the winning teams score bold.
 
 ## Close
