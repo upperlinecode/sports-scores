@@ -5,7 +5,7 @@ import Navbar from './components/Navbar.js'
 import data from './knicks-data.js'
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar/>
