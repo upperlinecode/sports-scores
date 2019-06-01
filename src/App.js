@@ -6,12 +6,18 @@ import data from './knicks-data.js'
 import './App.css';
 
 const App = () => {
-  return (
-    <div className="App">
-      <Navbar/>
-      <TableHeader/>
-    </div>
-  );
+  const component = new React.Component();
+  
+  component.render = () => {
+    return (
+      <div className="App">
+        <Navbar/>
+        <TableHeader/>
+      </div>
+    );
+  }
+  
+  return component
 }
 
 export default App;
