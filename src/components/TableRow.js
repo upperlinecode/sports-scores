@@ -1,7 +1,7 @@
-import React from 'react'
-import './TableStyle.css'
+import React from 'react';
+import './TableStyle.css';
 
-const TableRow = (props) => {
+function TableRow(props) {
   return(
     <div className="table-rows">
       <div>{props.game}</div>
@@ -13,7 +13,7 @@ const TableRow = (props) => {
       <div>{props.wins}</div>
       <div>{props.losses}</div>
     </div>
-  )
+  );
 }
 
-export default TableRow
+export default TableRow;

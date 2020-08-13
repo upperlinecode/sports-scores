@@ -1,7 +1,7 @@
 import React from 'react';
-import './TableStyle.css'
+import './TableStyle.css';
 
-const TableHeader = () => {
+function TableHeader() {
   return(
   <div>
     <h1>Season Results</h1>
@@ -16,7 +16,7 @@ const TableHeader = () => {
       <div>Losses</div>
     </div>
   </div>
-  )
+  );
 }
 
-export default TableHeader
+export default TableHeader;

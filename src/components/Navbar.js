@@ -1,12 +1,12 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import './Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return(
     <div className="navbar">
       <p className="logo">SCORECARD</p>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
